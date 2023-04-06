@@ -1,0 +1,58 @@
+{
+  "version": 0,
+  "root_name": "termdex",
+  "workspace_crates": {
+    "termdex": {
+      "full_path": "/home/lop01/scripts/rust/termdex/Cargo.toml",
+      "dependencies": {
+        "reqwest": {
+          "original_features": [
+            "blocking",
+            "serde_json",
+            "default-tls",
+            "json"
+          ],
+          "successfully_removed_features": [
+            "default-tls",
+            "serde_json"
+          ],
+          "unsuccessfully_removed_features": [
+            "json",
+            "blocking"
+          ]
+        },
+        "serde_json": {
+          "original_features": [
+            "std"
+          ],
+          "successfully_removed_features": [
+            "std"
+          ],
+          "unsuccessfully_removed_features": []
+        },
+        "crossterm": {
+          "original_features": [
+            "bracketed-paste"
+          ],
+          "successfully_removed_features": [
+            "bracketed-paste"
+          ],
+          "unsuccessfully_removed_features": []
+        },
+        "serde": {
+          "original_features": [
+            "serde_derive",
+            "std",
+            "derive"
+          ],
+          "successfully_removed_features": [
+            "std",
+            "derive",
+            "serde_derive"
+          ],
+          "unsuccessfully_removed_features": []
+        }
+      }
+    }
+  }
+}
